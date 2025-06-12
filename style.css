@@ -1,0 +1,234 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+nav a:hover {
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+img {
+  margin: 20px;
+  width: 300px;
+  border-radius: 50%;
+}
+/* SECTION HOME */
+#home {
+  background-color: #fff;
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.hero {
+  margin: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SECTION SOBRE MIM */
+#sobremim {
+  background-color: #fff;
+  width: 95%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.container {
+  margin: 10px;
+  padding: 10px;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+#apresentacao {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+#apresentacao ul li {
+  list-style: none;
+}
+#habilidades {
+  padding: 20px;
+}
+#habilidades ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+#habilidades ul li i {
+  font-size: 50px;
+}
+
+/* contato */
+#contato {
+  background-color: #fff;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#form {
+  margin: 20px auto;
+  
+  width: 50%;
+}
+#redessociais ul li {
+  display: flex;
+}
+
+#redessociais ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#redessociais ul li i {
+  margin-top: 10px;
+  font-size: 36px;
+  color: #000;
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* ELEMENTOS */
+.btn {
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+
+}
+.btn:hover {
+  background-color: #6e6e6f;
+}
+.enviar {
+  margin-top: 10px;
+  width: 400px;
+}
+
+.hero p {
+  font-size: 16px;
+}
+.hero h2 {
+  font-size: 36px;
+  color: #000;
+}
+input, textarea {
+  width: 400px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+input:focus, textarea:focus{
+  outline: none;
+} 
+
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul {
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  main img {
+    max-width: 80%;
+  }
+  /* sobre mim */
+  #habilidades ul li i {
+    font-size: 40px;
+    margin-right: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  input, textarea {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+.enviar {
+  width: 100%;
+}
+}
