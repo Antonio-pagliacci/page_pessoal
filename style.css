@@ -118,7 +118,7 @@ img {
 
 #form {
   margin: 20px auto;
-  
+
   width: 50%;
 }
 #redessociais ul li {
@@ -159,7 +159,6 @@ footer {
   padding: 10px;
   cursor: pointer;
   border: none;
-
 }
 .btn:hover {
   background-color: #6e6e6f;
@@ -176,15 +175,17 @@ footer {
   font-size: 36px;
   color: #000;
 }
-input, textarea {
+input,
+textarea {
   width: 400px;
   margin: 5px;
   padding: 10px;
   border-radius: 4px;
 }
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
   outline: none;
-} 
+}
 
 /* RESPONSIVIDADE */
 @media (max-width: 968px) {
@@ -223,12 +224,13 @@ input:focus, textarea:focus{
     justify-content: space-around;
   }
 
-  input, textarea {
-  width: 100%;
-  margin: 5px;
-  padding: 5px;
-}
-.enviar {
-  width: 100%;
-}
+  input,
+  textarea {
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+  .enviar {
+    width: 100%;
+  }
 }
